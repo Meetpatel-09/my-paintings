@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <title>My-Paintings</title>
+
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+     <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+</head>
+
+<body>
+
+     <header class="mt-3">
+          <nav class="p-2">
+               <ul class="nav justify-content-center">
+                    <li class="nav-item">
+                         <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                         <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                         <a class="nav-link" href="#">Contact</a>
+                    </li>
+               </ul>
+          </nav>
+     </header>
+
+     <main id="main" class="mt-3">
+          <div class="container d-flex flex-column justify-content-center">
+
+               <section>
+                    <div class="hero d-flex flex-wrap flex-row justify-content-center align-items-center gap-3">
+                         <div class="d-flex justify-content-center align-items-center">
+                              <img src="assets/images/profile.png" alt="Deep" class="rounded-circle img-profile">
+                              <div class="circle rounded-circle position-absolute"></div>
+                         </div>
+                         <div class="desc">
+                              <div class="name">
+                                   <p class="h5"> Deep Rajeshkumar Tailor </p>
+                                   <a href="https://www.instagram.com/" class="text-decoration-none text-black">
+                                        <p class="h6">
+                                             <i class="bi bi-instagram"></i>
+                                             deeptailor123
+                                        </p>
+                                   </a>
+                                   <a href="" class="text-decoration-none text-black">
+                                        <p class="h6 m-0"><i class="bi bi-whatsapp"></i> +91 98982 35786</p>
+                                   </a>
+                              </div>
+                         </div>
+                    </div>
+
+               </section>
+
+
+               <section id="gallery" class="gallery-body mt-5">
+                    <div class="main my-container">
+                         <!-- Header -->
+                         <div class="header">
+                              <h1>Image Gallery</h1>
+                              <p>View, Share and Buy what you like. Thnak You.</p>
+                         </div>
+
+                         <!-- <div>
+                              <select title="Category" name="filter" id="filter" onchange="ChangeImages()">
+                                   <option value="select" selected>Select</option>
+                                   <option value="one">One</option>
+                                   <option value="two">Two</option>
+                                   <option value="three">Three</option>
+                              </select>
+                         </div> -->
+
+                         <!-- Photo Grid -->
+                         <div class="container">
+
+                              <div class="row">
+                                   <div class="column" id="column1">
+                                   </div>
+                                   <div class="column" id="column2">
+                                   </div>
+                                   <div class="column" id="column3">
+                                   </div>
+                              </div>
+                         </div>
+
+                    </div>
+               </section>
+               <section id="contact">
+
+               </section>
+          </div>
+
+
+     </main>
+
+     <img id="close" src="assets/icons/close.png" alt="close" onclick="closeImageView()">
+     <div class="enlarge" id="enlarge">
+          <div class="d-flex m-0 p-0 flex-column align-items-center justify-content-center">
+               <img class="image1" id="image1" alt="picture" onclick="onImageClickEnlarge()"></img>
+               <button type="button" onclick="buyNow()" id="btnbuy" class="my=btn btn btn-outline-primary position-fixed" style="bottom: 20px;">Buy Now</button>
+          </div>
+     </div>
+
+     <footer class="border-top py-3 my-4 bg-white">
+          <div class="container d-flex flex-wrap justify-content-between align-items-center ">
+               <div class="col-md-4 d-flex align-items-center">
+                    <span class="mb-3 mb-md-0 text-muted">&copy; 2023 Company, Inc</span>
+               </div>
+
+               <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                    <li class="ms-3"><a class="text-muted" href="#"> <i class="bi bi-instagram"></i></a></li>
+                    <li class="ms-3"><a class="text-muted" href="#"> <i class="bi bi-whatsapp"></i></a></li>
+               </ul>
+          </div>
+     </footer>
+
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+          crossorigin="anonymous"></script>
+
+     <script src="js/myscript.js"></script>
+</body>
+
+</html>
